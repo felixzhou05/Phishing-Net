@@ -1,1 +1,51 @@
+.background {
+  background-color: #183864;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: #183864;
+  color:white;
+}
+
+.tabs {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 100px;
+  margin-right: 70px; 
+}
+
+.web-title {
+  margin-left: 50px;
+}
+
+.title-of-project {
+  background-color:white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.phishnet-title {
+  font-size: 120px;
+  font-weight: bolder;
+  width: 50px;
+}
+
+.phishnet-image {
+  width: 20%; /* Adjust this percentage to make the image smaller */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
 
