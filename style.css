@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #183864;
-  color:white;
+  color: white;
 }
 
 .tabs {
@@ -33,13 +33,16 @@
   display: flex;
   height: 90vh;
   align-items: center;
-  justify-content: center;
   font-family: 'Poppins', sans-serif;
+  padding-left: 205px;
+  
 }
 
 .phishnet-title {
   font-weight: bolder;
   width: 50px;
+  font-size: 120px;
+  color: #183864;
 }
 
 .phishnet-image {
