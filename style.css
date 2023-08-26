@@ -2,6 +2,7 @@
   background-color: #183864;
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .nav-bar {
@@ -10,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #183864;
-  color: white;
+  color:white;
 }
 
 .tabs {
@@ -22,33 +23,114 @@
   margin-right: 70px; 
 }
 
+.white-logo {
+  width: 70px; 
+  height: auto;
+}
+
 .web-title {
   margin-left: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.gray-border {
+  width:100%;
+  height: 50px;
+  background-color: rgb(233, 231, 231);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.home-display {
+  display:flex;
+  background-color: white;
+  padding-top: 3%;
+}
+
+.wire-image {
+  padding-top: 4.5%;
+  height: 100px;
+  width: auto;
+ 
 }
 
 .title-of-project {
-  background-color:white;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  padding-left: 25%;
   display: flex;
   height: 90vh;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  padding-left: 205px;
+  justify-content: center;
+
+}
+
+.centre-title {
+  width: 30%; /* Adjust the width to your desired value */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -200px;
   
 }
 
-.phishnet-title {
-  font-weight: bolder;
-  width: 50px;
+.phishnet-bold {
+  font-family: 'Poppins', sans-serif;
   font-size: 120px;
-  color: #183864;
+  height: 100px;
+  padding-bottom: 150px;
+  line-height: 130px;
+  color:#183864;
 }
 
 .phishnet-image {
-  width: 20%; /* Adjust this percentage to make the image smaller */
+  width: 50px; /* Adjust this percentage to make the image smaller */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  padding-top: 100px;
 }
 
+.description {
+  font-family: 'Poppins', sans-serif;
+}
 
+.learn-more-button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFD6B0;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+  color:#183864;
+  border-color:#183864;
+  margin-right: 25px;
+}
 
+.our-story-button {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+  color:#183864;
+  border-color:#183864;
+}
+
+.centre-try {
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.try-it-out-button {
+  font-family: 'Poppins', sans-serif;
+  text-decoration:underline;
+  background-color: #183864;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #FFD6B0;
+  font-weight: 1000;
+}
