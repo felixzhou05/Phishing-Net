@@ -11,6 +11,7 @@
 
 </head>
 <body>
+    <script src="submit-script.js"></script>
 
     <section class="about-page">
         <div class="background">
@@ -48,7 +49,7 @@
                         </div>
 
                         <div>
-                            <button class="submit-button">
+                            <button id="submit-button">
                                 submit
                             </button>
                         </div>
@@ -57,12 +58,8 @@
                     
                     <div class="report-content">
                         <div class="box">
-                            <div class = "conclusion">
-                                <p>Yes, there's phishing</p>
-                            </div>
-
-                            <div class = "report">
-                                <p><strong>report:</strong> coming soon</p>
+                            <div class="conclusion">
+                                <p id="conclusionText">Yes, there's phishing</p>
                             </div>
                         </div>
                     </div>
@@ -84,6 +81,43 @@
     </div>
 
 </div>
+
+
+<script>
+    // Function to update the conclusion text based on the response
+    function updateConclusion(responseText) {
+        const conclusionElement = document.getElementById('conclusionText');
+        if (responseText === '0') {
+            conclusionElement.textContent = 'Safe';
+        } else if (responseText === '1') {
+            conclusionElement.textContent = 'Unsafe';
+        } else {
+            conclusionElement.textContent = 'Unknown';
+        }
+    }
+
+    // Function to fetch status from the server
+    function fetchStatus() {
+        fetch('your_server_endpoint_here')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(responseText => {
+                updateConclusion(responseText); // Update the conclusion text
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                updateConclusion('Unknown');
+            });
+    }
+
+    // Update conclusion text initially and then fetch status at regular intervals (e.g., every 5 seconds)
+    updateConclusion('Unknown'); // Initial state
+    setInterval(fetchStatus, 5000); // Update every 5 seconds
+</script>
 
 </body>
 </html>
