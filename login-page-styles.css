@@ -108,3 +108,18 @@ a:hover {
   text-align: center;
   color: black;
 }
+
+.footer{
+  background-color:#183864;
+  height: 150px;
+}
+
+
+.details {
+  color: white;
+  padding-top: 25px;
+  padding-left: 100px;
+  align-items: center;
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+}

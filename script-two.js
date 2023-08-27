@@ -1,12 +1,9 @@
+window.onscroll = function() {scrollFunction()};
 
-function navigateToPage(pageNumber) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach((page, index) => {
-        if (index === pageNumber - 1) {
-            page.style.transform = 'translateX(0)';
-        } else {
-            page.style.transform = 'translateX(100%)';
-        }
-    });
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navBar").style.top = "-50px";
+    }
 }
-

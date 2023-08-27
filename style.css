@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 
 html, body {
     font-family: 'Poppins';
@@ -9,43 +12,54 @@ html, body {
 }
 
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #96B5DF;
+}
+
 .background {
-    background-color: #183864;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+  background-color: #183864;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
-  
- 
+
 .nav-bar {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    background-color: #183864;
-    color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: #183864;
+  color:white;
 }
-  
+
 .tabs {
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: flex-end; 
-    gap: 100px;
-    margin-right: 70px;
-    font-weight: 200;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 100px;
+  margin-right: 70px; 
 }
-  
-  .white-logo {
-    width: 70px; 
-    height: auto;
+
+.white-logo {
+  width: 70px; 
+  height: auto;
 }
-  
-  .web-title {
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: 500;
+
+.web-title {
+  margin-left: 50px;
+  display:flex;
+  justify-content: space-evenly;
 }
   
   .gray-border {
@@ -143,7 +157,7 @@ html, body {
   
   .learn-more-button {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFD6B0;
+    background-color: white;
     padding: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -152,6 +166,10 @@ html, body {
     border-color:#183864;
     margin-right: 25px;
     border: solid 2px #183864;
+  }
+
+  .learn-more-button:hover {
+    background-color: #FFD6B0;
   }
   
   .our-story-button {
@@ -163,6 +181,10 @@ html, body {
     border-radius: 50px;
     color:#183864;
     border: solid 2px #183864;
+  }
+
+  .our-story-button:hover {
+    background-color: #FFD6B0;
   }
   
 .centre {
@@ -358,3 +380,4 @@ html, body {
     font-weight: 100;
 
 }
+
