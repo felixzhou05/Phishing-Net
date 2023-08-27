@@ -16,22 +16,23 @@ html, body {
     padding-top: 10px;
 }
   
-  .nav-bar {
+ 
+.nav-bar {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     background-color: #183864;
-    color:white;
+    color: white;
 }
   
-  .tabs {
+.tabs {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: flex-end; 
     gap: 100px;
-    margin-right: 70px; 
+    margin-right: 70px;
     font-weight: 200;
 }
   
@@ -42,7 +43,7 @@ html, body {
   
   .web-title {
     margin-left: 50px;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     font-weight: 500;
 }
@@ -56,7 +57,7 @@ html, body {
 }
   
   .home-display {
-    display:flex;
+    display: flex;
     background-color: white;
     padding-top: 3%;
 }
@@ -350,7 +351,7 @@ html, body {
 
 
 .details {
-    color: aliceblue;
+    color: white;
     padding-top: 25px;
     padding-left: 100px;
     align-items: center;
