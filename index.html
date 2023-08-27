@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fishNet</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap%27" rel="stylesheet">
+    <title> phishnet </title> 
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+
+    <script src="script-two.js"></script>
 
   <div class="background">
     <div class="nav-bar">
       <div class="web-title">
         <p>phish net</p>
-        <img src="WhiteLogo.png" class="white-logo">
+        <img src="./images/WhiteLogo.png" class="white-logo">
       </div>
       <div class="tabs">
         <p>about</p>
@@ -28,14 +28,13 @@
     </div>
 
     <div class="home-display">
-      <div class="wire-image">
-        <img src="wires.png">
+
+      <div data-aos="fade-right" data-aos-duration="2000" class="wire-image">
+        <img src="./images/wire.png">
       </div>
 
       <div class="title-of-project">
-        
-
-        <div class = "centre-title">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000" class="centre-title">
           <div class="phishnet-title">
             <div class="phishnet-bold">
               <p>phish <br>
@@ -44,8 +43,11 @@
             <div class="description">
               <p>an AI-powered fraud detection tool 
                 to <br> catch sketchy emails and protect you 
-                <br> from online scamming   </p>
+                <br> from online scamming  
+                <br>
+                </p>
             </div>
+
             <button class="learn-more-button">
               learn more&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
             </button>
@@ -53,24 +55,145 @@
               our story&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
             </button>
           </div>
-          <div class="phishnet-image">
-            <img src="logo.png"> 
+
+          <div class="con">
+            <img class="phishnet-image" src="./images/PF.png">
+            <img data-aos-delay="2000" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="750" class="hl" src="./images/HL.png">
           </div>
+
         </div>
-
-      
       </div>
-    </div>
-    <div class = "centre-try">
-      <button class="try-it-out-button">
-      try it out!    
-      </button>
-    </div>
 
-
+    </div>
 
     
-  </div>
+
+ 
+    <div class="second-page">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="why">
+            <p>why phish net?</p>
+        </div>
+
+        <div class="half">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" class="info">
+                <div class="container1">
+                    <p class="head"> 
+                    reduce online scamming 
+                    </p>
+                    <p class="bod"> with over 83% of companies facing <br>
+                                phishing scams, phish finder <br>
+                                protects you from malicious activity 
+                    </p>
+                    <img class="phish" src="./images/Phishing.png">
+                </div>
+    
+                <div class="container2">
+                    <p class="head"> increase fraud detection </p>
+                    <p class="bod"> our AI model optimizes detection  <br>
+                                accuracy by 20% and reduces false <br>
+                                positives by 15%
+                    </p>
+                    <img class="shield" src="./images/Protect.png">
+                </div>
+    
+                <div class="container3">
+                    <p class="head"> protect your privacy </p>
+                    <p class="bod"> phish net doesn’t store your data, <br>
+                     keeping your personal information<br>
+                      protected
+                    </p>
+                    <img class="lock" src="./images/lock.png">
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" class="email">
+                <img src="/images/email.png">
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="third-page">
+        <div class="top">
+                <img data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="7000" class="hook4" src="/images/hr-hook.png">
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="how">
+                    <p>how it works</p>
+                    <p class="sentence">phish net is transparent with how we protect you</p>
+                </div>
+                <img data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="7000" class="hook3" src="/images/hl-hook.png">
+        </div>
+        
+        <div class="three-border"> 
+            
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" class="numbers">
+                <img src="/images/numbers.png">
+            </div>
+
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" class="flow">
+                <div class="one">
+                    <p class="t-head">
+                    segmentation and tokenization
+                    </p>
+                    <p class="t-bod">
+                    we break apart text into sentences and separate words
+                    </p>
+                </div>
+
+                <div class="two">
+                    <p class="t-head">
+                    name-entity tagging
+                    </p>
+                    <p class="t-bod">
+                    our model classifies the extracted data based on phished <br> emails
+                    </p>
+                </div>
+
+                <div class="three">
+                    <p class="t-head">
+                    data analysis
+                    </p>
+                    <p class="t-bod">
+                    our model analyzes whether the email is a phishing attack
+                    </p>
+                </div>
+
+                <div class="four">
+                    <p class="t-head">
+                    report
+                    </p>
+                    <p class="t-bod">
+                    phish net creates a thorough report of phishing activity in <br>
+                     your email
+                    </p>
+                </div>
+            </div> 
+            
+            <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" class="email" class="pemail">
+                <img src="/images/pemail.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="p"> 
+
+    </div>
+
+    <div class="footer">
+        <div class="details">
+            <p> copyright 2023 <br>
+                <br>
+                made by jeffrey wong, deekshitha kannan, happy zhou, kamakshi sarvanathan
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
-</html>
+
